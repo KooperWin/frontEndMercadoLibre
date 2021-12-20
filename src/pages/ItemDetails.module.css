@@ -79,3 +79,12 @@
   margin: 15px;
   height: 100%;
 }
+
+.greenText {
+  color: #00a650;
+}
+
+.greenText small {
+  font-size:1.3rem;
+  color: black;
+}

@@ -39,25 +39,25 @@ export function ItemDetails() {
           <br />
           Ver los medios de pago
         </p>
-        <p>OFERTA DEL DIA</p>
+        <p className={styles.greenText}>OFERTA DEL DIA</p>
       </div>
       <div className={`${styles.rightContainer} ${styles.col}`}>
-        <p>
+        <p className={styles.greenText}>
           Llega gratis el miercoles FULL
           <br />
-          Comprando dentro de las próximas
+          <small>Comprando dentro de las próximas</small>
           <br />
-          5h 49min
+          <small>5h 49min</small>
           <br />
-          Enviar a Puerta del Sol 742
+          <small>Enviar a Puerta del Sol 742</small>
         </p>
-        <p>
+        <p className={styles.greenText}>
           Retíralo gratis a partir del miércoles en correos y otros puntos
-          <br /> Comprando dentro de las próximas
+          <br /> <small>Comprando dentro de las próximas</small>
           <br />
-          5h 49min
+          <small>5h 49min</small>
           <br />
-          Ver en el mapa
+          <small> Ver en el mapa</small>
         </p>
         <strong>Stock Disponible</strong>
         <p className={styles.firstP}>{product.stock}</p>

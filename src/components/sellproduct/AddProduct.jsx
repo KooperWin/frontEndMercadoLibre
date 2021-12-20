@@ -210,7 +210,9 @@ export function AddProduct() {
                 autoComplete="off"
                 name="price"
                 min={1}
-                defaultValue={1}
+                max={999999}
+                placeholder="50.0"
+                step="0.01"
                 {...register("price", {
                   required: {
                     value: true,
