@@ -1,0 +1,56 @@
+.loginContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 150px;
+}
+
+.loginInputsContainer {
+  border-radius: 5px;
+  width: 650px;
+  height: auto;
+  background-color: white;
+  text-align: center;
+}
+
+.loginInstructions {
+  padding-top: 10px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.loginInputsForm input {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  height: 50px;
+  width: 450px;
+}
+
+.loginInputsForm input:focus {
+  outline: none;
+  border: 1px solid blue;
+  box-shadow: 0 0 5px blue;
+}
+
+.loginButton {
+  background-color: #3483fa;
+  color: #fff;
+  font-size: 2rem;
+  border-radius: 10px;
+  outline: none;
+  height: 65px;
+  width: 450px;
+  cursor: pointer;
+}
+
+.createAccountButton {
+  color: blue;
+  cursor: pointer;
+}
+
+.spanes{
+ color: red;
+}

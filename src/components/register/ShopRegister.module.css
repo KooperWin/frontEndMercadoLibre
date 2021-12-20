@@ -1,0 +1,47 @@
+.registerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+  }
+  
+  .registerInputsContainer {
+    border-radius: 5px;
+    width: 650px;
+    height: 700px;
+    background-color: white;
+    text-align: center;
+  }
+  
+  .registerInstructions {
+    padding-top: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .registerInputsForm input {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    height: 50px;
+    width: 450px;
+  }
+  
+  .registerInputsForm input:focus {
+    outline: none;
+    border: 1px solid blue;
+    box-shadow: 0 0 5px blue;
+  }
+  
+  .registerButton {
+    background-color: #3483fa;
+    color: #fff;
+    font-size: 2rem;
+    border-radius: 10px;
+    outline: none;
+    height: 85px;
+    width: 450px;
+    cursor: pointer;
+  }

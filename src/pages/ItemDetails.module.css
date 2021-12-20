@@ -1,0 +1,27 @@
+.detailsContainer {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  flex-wrap: wrap;
+}
+
+.col {
+  max-width: 700px;
+  margin: 15px;
+  height: 90%;
+}
+
+.productimage:hover {
+  opacity: 0.8;
+}
+.productimage {
+  border-radius: 35px;
+}
+
+.productDetails {
+  font-size: 1.5rem;
+}
+
+.firstP {
+  margin-top: 0px;
+}

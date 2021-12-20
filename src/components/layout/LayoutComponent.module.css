@@ -1,0 +1,60 @@
+.navHeader {
+  height: 100px;
+  width: 99%;
+  padding: 0 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  font-family: "Proxima Nova", -apple-system, "Helvetica Neue", Helvetica,
+    Roboto, Arial, sans-serif;
+  color: #333;
+  background-color: #fff159;
+}
+
+.firstMenu {
+  font-size: 1rem;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex: 1;
+}
+
+.leftMenu {
+  position: absolute;
+  left: 0;
+}
+
+.postalCode {
+  text-align: center;
+}
+
+.SearchInput {
+  width: 400px;
+  height: 25px;
+  border-radius: 10px;
+}
+
+.secondMenu {
+  font-size: 1rem;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex: 1;
+}
+.clickable:hover {
+  cursor: pointer;
+}
+
+.loginlogoutDIV {
+  display: flex;
+  flex-direction: row;
+}
+
+.loginlogoutLI {
+  padding-right: 55px;
+}

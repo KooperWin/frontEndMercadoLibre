@@ -1,0 +1,32 @@
+.containercard {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+.categoriecard:hover {
+  opacity: 0.7;
+}
+.categoriecard {
+  list-style: none;
+  text-align: center;
+}
+
+.categorieimage {
+  background-color: #ebebeb;
+  max-width: 350px;
+  max-height: 300px;
+  overflow: hidden;
+}
+
+.hrr {
+  width: 395px;
+  color: #ebebeb;
+}
+
+.categorieName {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}

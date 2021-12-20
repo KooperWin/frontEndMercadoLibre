@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  justify-content: center;
+  background-color: #FFF159;
+  width: 100%;
+}
+
+.title {
+  font: size 10rem;
+  font-weight: bolder;
+}
+
+.cp{
+  font-size: .9rem;
+}

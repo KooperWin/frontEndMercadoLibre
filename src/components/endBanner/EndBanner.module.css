@@ -1,0 +1,44 @@
+.container {
+  padding-top: 40px;
+}
+
+.bannerContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 400px;
+  background-color: #ffffff;
+}
+
+.menuContainer {
+  text-align: center;
+  padding: 100px;
+}
+
+.links {
+  color: blue;
+  cursor: pointer;
+}
+.downContainerLast {
+  display: flex;
+  flex-direction: row;
+  padding-left: 80px;
+  background-color: #ebebeb;
+  font-weight: bold;
+  color: black;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.downContainerLast p {
+  padding-left: 25px;
+  margin-bottom: 5px;
+}
+
+.downtext {
+  margin-top: 0px;
+  margin-bottom: 5px;
+  padding-left: 108px;
+  font-size: 1rem;
+}

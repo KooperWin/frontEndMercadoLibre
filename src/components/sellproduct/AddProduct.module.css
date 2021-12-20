@@ -1,0 +1,78 @@
+.divContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 150px;
+}
+
+.registerInputsContainer {
+  border-radius: 5px;
+  width: 650px;
+  height: 1400px;
+  margin-bottom: 100px;
+  background-color: white;
+  text-align: center;
+}
+
+.registerInputsContainer input {
+  width: 400px;
+  height: 50px;
+}
+
+.registerInputsContainer select {
+  width: 400px;
+  height: 70px;
+  padding-bottom: 20;
+}
+
+.registerInstructions {
+  padding-top: 10px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.registerInputsForm {
+  padding-top: 30px;
+}
+
+.registerInputsForm input {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  height: 50px;
+  width: 450px;
+}
+
+.registerInputsForm input:focus {
+  outline: none;
+  border: 1px solid blue;
+  box-shadow: 0 0 5px blue;
+}
+
+.registerInputsForm select {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  height: 50px;
+  width: 450px;
+}
+
+.registerInputsForm select:focus {
+  outline: none;
+  border: 1px solid blue;
+  box-shadow: 0 0 5px blue;
+}
+
+.registerButton {
+  background-color: #3483fa;
+  color: #fff;
+  font-size: 2rem;
+  border-radius: 10px;
+  outline: none;
+  height: 85px;
+  width: 450px;
+  cursor: pointer;
+}
