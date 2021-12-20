@@ -4,6 +4,7 @@ import { CategorieCard } from "../categorieCard/CategorieCard";
 import { PaymentMethods } from "../paymentMethods/PaymentMethods";
 import { Slideshow } from "../slideShow/SlideShow";
 import { Spinner } from "../spinner/Spinner";
+import { EndBanner } from "../endBanner/EndBanner";
 import styles from "./CategoriesComponent.module.css";
 
 export function CategoriesComponent() {
@@ -34,6 +35,7 @@ export function CategoriesComponent() {
           <CategorieCard key={categorie.id} categorie={categorie} />
         ))}
       </ul>
+      <EndBanner/>
     </div>
   );
 }

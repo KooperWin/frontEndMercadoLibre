@@ -1,14 +1,32 @@
 .detailsContainer {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   display: flex;
   justify-content: center;
   padding-top: 100px;
   flex-wrap: wrap;
 }
 
+.rightContainer {
+  font-size: 1.5rem;
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 20px;
+  min-height: 750px;
+  max-height: 750px;
+}
+
 .col {
   max-width: 700px;
   margin: 15px;
-  height: 90%;
+  height: 100%;
+}
+
+.middleColumn {
+  max-width: 400px;
+  margin: 15px;
+  min-height: 750px;
+  max-height: 750px;
 }
 
 .productimage:hover {
@@ -16,12 +34,48 @@
 }
 .productimage {
   border-radius: 35px;
+  min-height: 790px;
+  max-height: 790px;
 }
 
 .productDetails {
   font-size: 1.5rem;
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 20px;
 }
 
 .firstP {
   margin-top: 0px;
+}
+
+.loginButton {
+  background-color: #3483fa;
+  color: #fff;
+  font-size: 2rem;
+  border-radius: 10px;
+  outline: none;
+  height: 65px;
+  width: 450px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.inputStock {
+  width: 110px;
+  height: 40px;
+  font-size: 1.3rem;
+}
+
+.downContainer {
+  font-size: 1.5rem;
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 20px;
+}
+
+.colDown {
+  max-width: 1500px;
+  margin: 15px;
+  height: 100%;
 }

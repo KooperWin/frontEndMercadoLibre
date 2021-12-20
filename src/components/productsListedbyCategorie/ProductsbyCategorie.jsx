@@ -6,6 +6,7 @@ import styles from "./ProductsbyCategorie.module.css";
 import { Slideshow } from "../slideShow/SlideShow";
 import { PaymentMethods } from "../paymentMethods/PaymentMethods";
 import { ItemCard } from "../card/ItemCard";
+import { EndBanner } from "../endBanner/EndBanner";
 
 export function ProductsbyCategorie() {
   let { categorieId } = useParams();
@@ -42,6 +43,7 @@ export function ProductsbyCategorie() {
           <ItemCard key={product.id} product={product} />
         ))}
       </ul>
+      <EndBanner/>
     </div>
   );
 }

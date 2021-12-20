@@ -7,6 +7,8 @@ import { ShopRegister } from "../register/ShopRegister";
 import { CategoriesComponent } from "../categories/CategoriesComponent";
 import { ProductsbyCategorie } from "../productsListedbyCategorie/ProductsbyCategorie";
 import { AddProduct } from "../sellproduct/AddProduct";
+import {AllProducts } from "../allProducts/AllProducts"
+
 export function App() {
   return (
     <Router>
@@ -26,6 +28,10 @@ export function App() {
           <Route
             path="/productcategories"
             element={<CategoriesComponent />}
+          ></Route>
+          <Route
+            path="/allproducts"
+            element={<AllProducts />}
           ></Route>
           <Route path="/loginpage" element={<ShopLogin />}></Route>
           <Route path="/registerpage" element={<ShopRegister />}></Route>

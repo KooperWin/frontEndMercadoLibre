@@ -5,7 +5,7 @@ import { get } from "../../utils/httpClient";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { Spinner } from "../spinner/Spinner";
-import Cookies from "universal-cookie";
+import { endBanner } from "../endBanner/EndBanner";
 
 export function AddProduct() {
   const [categories, setcategories] = useState([]);
@@ -35,7 +35,6 @@ export function AddProduct() {
   } = useForm();
 
   function onSubmitProduct(evento) {
-    const cookies = new Cookies();
     setIsLoading(true);
     fetch("http://104.237.129.63:8013/api/shop/product/", {
       method: "POST",
@@ -300,6 +299,7 @@ export function AddProduct() {
           <button className={styles.registerButton}>Crear Articulo</button>
         </form>
       </div>
+      <endBanner />
     </div>
   );
 }

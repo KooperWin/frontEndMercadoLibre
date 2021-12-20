@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { get } from "../../utils/httpClient";
 import { ItemCard } from "../card/ItemCard";
-import styles from "./ShopGrid.module.css";
+import styles from "./AllProducts.module.css";
 import { Spinner } from "../spinner/Spinner";
 import { useQuery } from "../../hooks/useQuery";
 import { Slideshow } from "../slideShow/SlideShow";
@@ -9,23 +9,17 @@ import { PaymentMethods } from "../paymentMethods/PaymentMethods";
 import { EndBanner } from "../endBanner/EndBanner";
 import { Link } from "react-router-dom";
 
-export function ShopGrid() {
+export function AllProducts() {
   const [products, setProducts] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
-  const query = useQuery();
-  const name = query.get("name");
-
   useEffect(() => {
     setIsLoading(true);
-    const searchUrl = name
-      ? "http://104.237.129.63:8013/api/shop/product/?name=" + name
-      : "http://104.237.129.63:8013/api/shop/product/";
-    get(searchUrl).then((data) => {
+    get("http://104.237.129.63:8013/api/shop/product/").then((data) => {
       setProducts(data);
       setIsLoading(false);
     });
-  }, [name]);
+  }, []);
 
   if (isLoading) {
     return <Spinner></Spinner>;
@@ -35,15 +29,10 @@ export function ShopGrid() {
       <Slideshow />
       <PaymentMethods />
       <div className={styles.infoArticulos}>
-        <p>
-          Productos
-          <Link to="/allProducts">
-            <small>ver todos</small>
-          </Link>
-        </p>
+        <p>Lista completa de productos</p>
       </div>
       <ul className={styles.shopGrid}>
-        {products.slice(0, 10).map((product) => (
+        {products.map((product) => (
           <ItemCard key={product.id} product={product} />
         ))}
       </ul>
